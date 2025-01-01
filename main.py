@@ -13,6 +13,9 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        
+        player_obj.update(dt)
+
         screen.fill("black")
         player_obj.draw(screen)
 
